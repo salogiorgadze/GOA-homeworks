@@ -1,0 +1,11 @@
+name=input("Enter your name:")
+surname=input("Enter your surname:")
+age=int(input("Enter your age:"))
+birthdate=input("Enter your birthdate (DD/MM/YYYY):")
+
+print("==================")
+print("Name:",name)
+print("Surname:",surname)
+print("Age:",age)
+print("Birthdate:",birthdate)
+print("==================")
