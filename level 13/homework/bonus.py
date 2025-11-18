@@ -18,8 +18,10 @@ if ask == "R":
             print("Congrats,You are right")
         elif guess == "":
             print("The field is empty,Write anything")
+            print("Attempts left:",2-i)
         else:
             print("Incorrect,Try Again")
+            print("Attempts left:",2-i)
     if not guessed:
         print("Incorrect,You dont have more attempts,The right answer was:Password0505")
 
