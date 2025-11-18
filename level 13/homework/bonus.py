@@ -1,29 +1,41 @@
-name = input("Enter your name:")
+name = input("Enter your name: ")
 password = "Password0505"
+attempts = 3
 guessed = False
 
-print("Welcome",name)
-print("Guess my password<3,you have only three attempts")
-ask = input("If you are ready type R:")
+print("Welcome,", name)
+print("This is a password guessing game,can you guess my password?<3")
+print("You have", attempts, "attempts to guess the correct password.")
 
-if ask == "R":
-    print("Lets Go")
+ready = input("If you are ready, type R: ")
 
+if ready == "R":
+    print("Ulala,Let's start the game.")
 
-    for i in range(3):
-        guess = input("Enter my password:")
+    attempts_left = attempts
+
+    for i in range(attempts):
+        guess = input("Enter my password: ")
 
         if guess == password:
             guessed = True
-            print("Congrats,You are right")
+            print("Congratulations! You guessed my password correctly!")
         elif guess == "":
-            print("The field is empty,Write anything")
-            print("Attempts left:",2-i)
+            print("The field is empty.write something.")
         else:
-            print("Incorrect,Try Again")
-            print("Attempts left:",2-i)
+            print("Incorrect password. Keep going!")
+
+        attempts_left -= 1
+        if attempts_left > 0:
+            print("Attempts left:", attempts_left)
+        else:
+            print("No attempts left!")
+
     if not guessed:
-        print("Incorrect,You dont have more attempts,The right answer was:Password0505")
+        print("The correct password was:", password)
+        print("Better luck next time!")
+
+    print("Thank you for playing.smile! SALLY")
 
 else:
-    print("Get Ready")
+    print("Get ready next time. Goodbye!")
