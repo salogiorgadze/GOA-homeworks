@@ -1,9 +1,10 @@
 #პარამეტრს რასაც გადავცემთ იმაზე იმუშავებს ფუნქცია
-def multiply(x,y):
-    return x*y
-print(multiply(2,10))
+#Codwars ში გვქონდა დავალებები
 
-def opposite(number):
-        return - number
-print(opposite(15))
-print(opposite(-16))
+def litres(time):
+    return float(time*0.5)
+print(litres(5))
+
+num = 4.554
+
+print(int(num))
