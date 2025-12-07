@@ -1,0 +1,12 @@
+list = []
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter first number:"))
+num3 = int(input("Enter first number:"))
+list.append(num1)
+list.append(num2)
+list.append(num3)
+print(list)
+list.append("Green")
+list.append("Yellow")
+list.append("Purple")
+print(list)
