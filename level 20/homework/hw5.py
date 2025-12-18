@@ -1,3 +1,3 @@
 sentence = input("Enter sentence:")
-result = sentence.split(",")
+result = sentence.split()
 print(result)

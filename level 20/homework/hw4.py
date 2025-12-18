@@ -1,3 +1,3 @@
 text = "apple orange banana"
-result = text.split(",")
+result = text.split()
 print(result)
