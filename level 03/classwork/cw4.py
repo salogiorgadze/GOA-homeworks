@@ -1,0 +1,10 @@
+product1=input("enter your first favorite food:")
+product2=input("enter your second favorite food:")
+product3=input("enter your third favorite food:")
+product4=input("enter your fourth favorite food:")
+
+print("list:")
+print(1,product1)
+print(2,product2)
+print(3,product3)
+print(4,product4)

@@ -1,0 +1,2 @@
+TEXT = "PROGRAMMING IS FUN"
+print(TEXT.lower())

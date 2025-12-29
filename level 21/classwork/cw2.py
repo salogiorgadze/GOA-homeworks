@@ -1,0 +1,1 @@
+print("Salome".find("e"))

@@ -1,0 +1,5 @@
+print("french fries")
+print("toasts")
+print("pancakes")
+print("fruits")
+print("caesar")
