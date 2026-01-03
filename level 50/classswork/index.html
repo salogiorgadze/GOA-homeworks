@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- მომხმარებელს input - ით შემოატანინეთ task, მაგალითად Do the dishes, თქვენი დავალებაა, რომ მოცემული 
+     input - დან მომხმარებლის მნიშვნელობა ამოიღოთ და ჩასვათ <ul> tag - ში li tag - ის სახით, აგრეთვე ამ 
+        task - ს გვერდით უნდა ქონდეს edit delete ღილაკები, edit - ღილაკზე დაჭერისას შეგეძლებათ task - ის 
+        განახლება ხოლო delete - ღილაკზე დაჭერისას task - ის წაშლა, დაწერილი კოდი კომენტარების სახით ახსენით 
+        დეტალურად და გაიაზრეთ ის -->
+    <form id="form">
+        <label for="task">Enter ur info:</label><br>
+        <input type="text" name="name" placeholder="Enter your name:">
+        <input type="text" name="surname" placeholder="Enter your surname:">
+        <input type="password" name="pass" placeholder="Enter your password:">
+        <button id="addTask">Submit</button>
+    </form>
+    <p id="taskList"></p>
+    <script src="test.js"></script>
+</body>
+</html>

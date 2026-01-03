@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- მომხმარებელს შემოაყვანინეთ student - ის სახელი გვარი ასაკი grade 
+     subject - ი, ფორმის და - submit - ების მერე მოცემული student - 
+     ის მონაცემები უნდა შეინახოთ table - ში, უნდა შეგეძლოთ მოცემული
+      სტუდენტების sort, grade - ის მიხედვით, აგრეთვე უნდა შეგეძლოთ 
+      გაფილტვრაც subject - ის მიხედვით, უნდა შეგეძლოთ კონკრეტული 
+      სტუდენტის და - edit - ება და წაშლა თუ მომხმარებელს გააჩნია 
+      admin role (უნდა გქონდეთ register საიდანაც მომხმარებელი 
+      დარეგისტრირდება და default - ად მიენიჭება user role), გასტილეთ 
+      თქვენი ინსპირაციით -->
+    <div class="div1">
+    <form id="studentForm">
+        <input type="text" name="name" id="" placeholder="Enteer your name:"><br><br>
+        <input type="text" name="surname" id="" placeholder="Enteer your surname:"><br><br>
+        <input type="number" name="age" id="" placeholder="Enter your age:"><br><br>
+        <input type="number" name="grade" id="" placeholder="Enter your grade:"><br><br>
+        <input type="text" name="subject" id="" placeholder="Enter your subject:"><br><br>
+        <button>submit</button>
+    </form>
+</div>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Subject</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form>
+      <input type="text" name="brand" placeholder="Enter brand" required />
+      <input type="text" name="model" placeholder="Enter model" required />
+      <input type="number" name="year" placeholder="Enter year" required />
+      <input type="number" name="price" placeholder="Enter price" required />
+      <input type="url" name="image" placeholder="image" required />
+      <button>submit</button>
+    </form>
+    <form id="filters">
+      <input type="text" name="brand" placeholder="Filter by brand" />
+      <input type="number" name="minPrice" placeholder="Min price" />
+      <input type="number" name="maxPrice" placeholder="Max price" />
+    </form>
+    <div id="carsContainer"></div>
+    <script src="test.js"></script>
+  </body>
+</html>
