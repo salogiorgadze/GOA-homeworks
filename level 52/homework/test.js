@@ -69,7 +69,7 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
-const filterForm = document.forms.filters;
+const filterForm = getElementById('filters');
 
 const applyFilters = () => {
   const { brand, minPrice, maxPrice } = filterForm;
@@ -94,6 +94,6 @@ const applyFilters = () => {
   renderCars();
 };
 
-[...filterForm.elements].forEach(input => {
+[filterForm.elements].forEach(input => {
   input.addEventListener("input", applyFilters);
 });
