@@ -5,7 +5,7 @@ def hearta(k):
     return 15*math.sin(k)**5
 def heartb(k):
     return 12*math.cos(k)-5*math.cos(2*k)-2*math.cos(3*k)-math.cos(4*k)
-speed(300)
+speed(10000)
 bgcolor('black')
 for i in range(360):
     goto(hearta(i)*20, heartb(i)*20)
