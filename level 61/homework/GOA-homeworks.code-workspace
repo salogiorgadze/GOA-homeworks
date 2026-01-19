@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "GOA-homeworks",
+			"path": "../.."
+		},
+		{
+			"name": "interactive-rating-component-main",
+			"path": "../../../interactive-rating-component-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GOA-homeworks"
+	}
+}

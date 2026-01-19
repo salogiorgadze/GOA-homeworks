@@ -1,19 +1,19 @@
 const form = document.getElementById('formElement'); // მოვიპოვეთ წვდომა form ზე
 const tbody = document.getElementById('tbody'); // მოვიპოვეთ წვდომა tbody ზე
 
-const products = JSON.parse(localStorage.getItem('products')) || [];
+const products = JSON.parse(localStorage.getItem('products')) || []; // localStorage-დან იღებს პროდუქტების სიას, გარდაქმნის მასივად; თუ ცარიელია, ქმნის ცარიელ მასივს
 
 const addItem = (product) => {
-    const exists = products.find((obj) => obj.name === product.name);
+    const exists = products.find((obj) => obj.name === product.name); // ქმნის ფუნქციას და შემდეგ ეძებს მასივში პროდუქტს იმავე სახელით
 
     if(exists){
-        alert('The product name already exists!');
+        alert('The product name already exists!'); // თუ არსებობს alert ით ეუბნება
         return;
     };
 
-    products.push(product);
+    products.push(product); // პროდუქტი ემატება პროდუქტებში
 
-    localStorage.setItem('products', JSON.stringify(products));
+    localStorage.setItem('products', JSON.stringify(products)); // products მასივს გარდაქმნის ტექსტად და ინახავს localStorage-ში products გასაღებით
 };
 
 const deleteItem = (id) => {
@@ -63,3 +63,47 @@ form.addEventListener('submit', (e) => {
 });
 
 renderProductInTable();
+
+
+// 3) შექმენით ფუნქცია სახელად sumOfElements რომელიც არგუმენტად იღებს რიცხვებს (ეს რიცხვები არ არის მოქცეული მასივში), გამოიყენეთ შესაბამისი operator - ი მოცემული დავალების შესასრულებლად
+
+const sumOfElements = (...numbers)=>{
+    let sum = 0;
+    for (let num of numbers){
+        sum+=num
+    }
+    return sum
+}
+console.log(sumOfElements(2,3,4,5,6,7))
+
+// 4) შექმენით მასივი სადაც შეინახავთ თქვენი მეგობრების სახელებს, თქვენი დავალებაა რომ მოცემული მასივიდან ამოიღოთ იღოთ მნიშვნოლებები და შესაბამისი operator - ის გამოყენებით ჩასვათ მეორე მასივში, დაკოპირებული მასივიდან ამოიღეთ ერთ-ერთი ელემენტი და შეცვალეთ, კომენტარების ნტარების სახით ახსენით თუ რატომ შეიცვალა ორიგინალ მასივშიც იგივე index - ზე მყოფი ელემენტის მნიშვნელობა
+
+let friends = ['mariam','nino','nene','taso','tusa']
+let copied = [...friends]
+
+console.log(friends)
+console.log(copied)
+
+copied[0]='niniko'
+console.log(friends)
+console.log(copied)
+// იმიტომ არ შეიცვალა რომ copied არის დამოუკიდებელი მასივი და მასში ასახული ცვლილებები არ აისახება friends მასივზე
+
+
+const car = {
+    brand:'BMW',
+    year:2025,
+    color:'black',
+    model:'F10'
+}
+
+let car2 = {
+    ...car,
+    price:15000,
+    owner:'me'
+}
+console.log(car2)
+console.log(car)
+
+// რადგან car ობიექტში ყველა კუთვნილება არის PRIMITIVE მნიშვნელობა
+// (string, number), ისინი კოპირდებიან VALUE-ის მიხედვით.

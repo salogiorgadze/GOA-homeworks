@@ -1,0 +1,21 @@
+div{
+    width:400px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url(bg.avif);
+    background-size: cover;
+}
+div:hover{
+    width: 800px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5)),url(bg.avif);
+}
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div:hover h1 {
+    color: white;
+}
+div:hover p {
+    color:white;
+}

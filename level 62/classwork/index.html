@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <form id="formElement">
+        <label for="product">Product Name</label>
+        <input type="text" name="productName" placeholder="Enter Product Name" required />
+
+        <button>Add Product To Table</button>
+    </form>
+
+
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product ID</th>
+                <th>Delete Product</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

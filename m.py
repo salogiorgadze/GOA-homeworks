@@ -63,3 +63,6 @@ def odd(num):
 
 resl = list(map(tripled,filter(odd,numbers)))
 print(resl)
+
+
+

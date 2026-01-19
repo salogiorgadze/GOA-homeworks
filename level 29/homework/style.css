@@ -1,0 +1,46 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    gap: 40px;
+}
+#table1{
+    width: 400px;
+    height: 120px;
+    box-shadow: 0px 2px 0px rgb(92, 174, 158);
+    border-radius: 15px;
+    overflow: hidden;
+    border-collapse: collapse;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#thead1{
+    background-color:rgb(92, 174, 158);
+    color: white;
+}
+#sally{
+    border: 0.5px solid rgb(181, 181, 181);
+    background-color: rgb(234, 234, 234);
+    color: rgb(92, 174, 158);
+}
+
+#table2{
+    width:800px;
+    box-shadow: 0px 0.5px 1px black ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    border-collapse:collapse ;
+    text-align: center;
+}
+#thead2{
+    background-color: rgb(92, 174, 158);
+    color: white;
+}
+#diff{
+    border: 0.5px solid rgb(157, 156, 156);
+    background-color: rgb(236, 236, 236);
+}
+#tbody2 tr{
+    border: 0.5px solid rgb(157, 156, 156);
+}
+#tbody2 tr:nth-child(3n + 1){
+    background-color: rgb(246, 245, 245);
+}
