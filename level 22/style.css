@@ -135,6 +135,7 @@ ul {
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     color: rgb(30, 30, 30);
+    transition: all 0.3s;
 }
 .tbl1 {
     background-color: rgb(0, 9, 2);
@@ -145,6 +146,7 @@ ul {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 20px;
     color: rgb(2, 32, 7);
+    transition: all 0.3s;
 }
 .tbl2 {
     background: linear-gradient(rgb(14, 86, 14),black);
@@ -236,4 +238,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+button:hover{
+    transform: scale(1.1);
 }
