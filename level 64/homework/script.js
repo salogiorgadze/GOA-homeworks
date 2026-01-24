@@ -41,3 +41,15 @@ favDance()
     .then((correct) => console.log(`Fulfilled ${correct}`))
     .catch((reason) => console.log(`Haha ${reason}`))
     .finally(() => console.log('It is Juta'))
+
+
+fetch('https://fakestoreapi.com/products/1')
+.then((response) => {
+    return response.json();
+  })
+  .then((products) => {
+    console.log(products);
+  })
+  .catch((error) => {
+    console.log('შეცდომა:', error);
+  });
