@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo-large.svg" alt="" width="250">
+    
+    <div class="controls">
+      <div class="stats" id="stats">
+      <div class="stat-card">
+        <div class="stat-label">WPM:</div>
+        <div class="stat-value" id="wpm">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Accuracy:</div>
+        <div class="stat-value" id="accuracy">100%</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Time</div>
+        <div class="stat-value" id="time">60s</div>
+      </div>
+      </div>
+      <div class="control-group">
+        <button class="btn difficulty-btn active" data-difficulty="easy">Easy</button>
+        <button class="btn difficulty-btn" data-difficulty="medium">Medium</button>
+        <button class="btn difficulty-btn" data-difficulty="hard">Hard</button>
+      </div>
+      <div class="control-group">
+        <button class="btn mode-btn active" data-mode="timed">Timed (60s)</button>
+        <button class="btn mode-btn" data-mode="passage">Passage</button>
+      </div>
+      
+    </div>
+      <hr>
+    <div class="passage-container" id="passageContainer">
+      <div class="start-overlay" id="startOverlay">
+        <button class="start-btn">Click to Start</button>
+      </div>
+      <div id="passage"></div>
+    </div>
+<button class="btn btn-restart" id="restartBtn">Restart</button>
+    <div class="results hidden" id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

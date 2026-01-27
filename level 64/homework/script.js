@@ -43,7 +43,7 @@ favDance()
     .finally(() => console.log('It is Juta'))
 
 
-fetch('https://fakestoreapi.com/products/1')
+fetch('https://dummyjson.com/users')
 .then((response) => {
     return response.json();
   })
