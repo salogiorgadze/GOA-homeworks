@@ -1,14 +1,16 @@
 import Product from "./Product"
-function Products({products}){
+function Products({products,handleAdd}){
     return (
-        <>
-            <h1>Products</h1>
+        <div>
+            <h2>Products</h2>
             {
-                products.map((p) => {
-                    <Product p={p}/>
+                products.map((product) => {
+                    return(
+                        <Product key={product.id} product={product} handleAdd={handleAdd}/>
+                    )
                 })
             }
-        </>
+        </div>
     )
 }
 export default Products
