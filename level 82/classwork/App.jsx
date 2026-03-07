@@ -32,5 +32,3 @@ export default App
 
 
 
-
-App.jsx
