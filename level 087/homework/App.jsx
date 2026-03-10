@@ -80,5 +80,3 @@ console.log(movies)
 }
 
 export default App
-
-
