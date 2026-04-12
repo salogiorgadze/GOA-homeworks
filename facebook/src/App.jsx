@@ -1,17 +1,16 @@
-import Login from "./pages/Login"
-import useTheme from "./hooks/useTheme"
-import ToggleText from "./components/toggleText"
+import { BrowserRouter, Routes, Route } from "react-router";
+import Products from "./pages/Products";
+import Product from "./pages/Product";
+
 function App() {
-    const {handleClick,theme} = useTheme()
-  return(
-    <div style={{backgroundColor:theme}}>
-    <Login/>
-    <button onClick={handleClick}>submit</button>
-    <ToggleText/>
-    </div>
-
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Products />} />
+        <Route path="/product/:id" element={<Product />} />
+      </Routes>
+    </BrowserRouter>
   )
-
 }
-export default App
 
+export default App
